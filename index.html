@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sketch to Photo AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎨 Sketch to Photo AI</h1>
+        <p>Upload a sketch, describe the final image, and let the AI create it.</p>
+
+        <div class="main-content">
+            <div class="input-area">
+                <h3>1. Upload Your Sketch</h3>
+                <input type="file" id="imageUpload" accept="image/*">
+                <img id="imagePreview" src="#" alt="Your sketch will appear here" />
+
+                <h3>2. Describe the Image</h3>
+                <textarea id="prompt" rows="3" placeholder="e.g., A photorealistic professional photo of a blue leather handbag, studio lighting"></textarea>
+                
+                <button id="generateBtn">Generate Image</button>
+            </div>
+
+            <div class="output-area">
+                <h3>3. Your Generated Image</h3>
+                <div id="loader" class="loader" style="display: none;"></div>
+                <img id="resultImage" src="placeholder.png" alt="AI result will appear here" />
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
